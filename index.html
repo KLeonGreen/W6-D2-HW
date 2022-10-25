@@ -369,6 +369,21 @@
       }
 
       // EXTRA Write a JavaScript functionality that will remove the corresponding parent card from the DOM, upon clicking on their “Continue reading” link
+      const continueLinks1 = document.querySelector(".font-weight-bold");
+      const jumbo = document.querySelector(".jumbotron");
+      continueLinks1.addEventListener("click", function () {
+        jumbo.style.display = "none";
+      });
+      const continueLinks2 = document.querySelectorAll(".stretched-link")[0];
+      const firstCard = document.querySelectorAll(".no-gutters")[0];
+      continueLinks2.addEventListener("click", function () {
+        firstCard.style.display = "none";
+      });
+      const continueLinks3 = document.querySelectorAll(".stretched-link")[1];
+      const secondCard = document.querySelectorAll(".no-gutters")[1];
+      continueLinks3.addEventListener("click", function () {
+        secondCard.style.display = "none";
+      });
     </script>
   </body>
 </html>
