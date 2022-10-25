@@ -322,8 +322,10 @@
       title.style.color = "brown";
       // Write a JavaScript functionality to change the background of the jumbotron
 
-      const jumb = document.querySelector(".jumbotron");
-      jumb.style.backgroundColor = "yellow";
+      const changeColor = function () {
+        const jumb = document.querySelector(".jumbotron");
+        jumb.style.backgroundColor = "yellow";
+      };
 
       // Write a JavaScript functionality to remove the “twitter” link under the “Elsewhere” section in the aside element. It should happen when the page loads, automatically
       const twitterLink = document.querySelectorAll("a")[27];
@@ -331,11 +333,16 @@
         twitterLink.style.display = "none";
       };
       // Write a JavaScript functionality to remove the first 50 characters in the first paragraph for every blog post
-      const paragraphs = document.querySelectorAll(".blog-post p:nth-of-type(2)");
-      for (let words of paragraphs) {
-        // const newPara = words.slice(0, 5);
-        console.log(typeof words);
-      }
+
+      const CharacterSlice50 = function () {
+        const paragraphs = document.querySelectorAll(".blog-post p:nth-of-type(2)");
+        for (let words of paragraphs) {
+          // const newPara = words.slice(0, 5);
+          const newP = words.textContent;
+          const finalP = newP.substring(50);
+          console.log(finalP);
+        }
+      };
 
       // Write a JavaScript functionality to add a new Blog Post (div with title and text)
 

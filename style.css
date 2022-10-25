@@ -36,7 +36,7 @@ div.p-4 ol.mb-0 li a {
 }
 
 .blog-post:nth-of-type(3) ul li:nth-child(2) {
-  border: solid 3px magenta;
+  border: solid 3px rgb(0, 255, 136);
 }
 
 a[class~="float-right"] {
